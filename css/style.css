@@ -1,24 +1,62 @@
 body {
-  font-family: Verdana;
-  font-size: 1.5em; }
+  font-family: Helvetica;
+  font-size: 1.5; }
+  body h1 {
+    color: #FF0000;
+    text-align: center;
+    font-family: "Andale Mono"; }
+  body h2 {
+    text-align: center;
+    font-family: "Andale Mono"; }
 
 #team-members {
   clear: both; }
-
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px; }
-
-#team-members .member img {
-  width: 200px;
-  height: 200px; }
-
-#team-members .member div.name {
-  text-align: center; }
-
-body h1 {
-  color: #FF0000; }
+  #team-members .row {
+    display: block;
+    padding: 10px 100px; }
+  #team-members .member {
+    float: left;
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    padding: 6px;
+    -webkit-transition: transform 0.7s ease;
+    -moz-transition: transform 0.7s ease;
+    -o-transition: transform 0.7s ease;
+    -ms-transition: transform 0.7s ease; }
+    #team-members .member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      opacity: 0.95; }
+    #team-members .member:hover {
+      transform: scale(1.1); }
+      #team-members .member:hover #david {
+        content: url("http://i.imgur.com/3USVsbU.png"); }
+      #team-members .member:hover #don {
+        content: url("http://i.imgur.com/NT5PRIh.jpg"); }
+      #team-members .member:hover #jeremy {
+        content: url("http://i.imgur.com/GOFuRLx.jpg"); }
+      #team-members .member:hover #khurram {
+        content: url("http://i.imgur.com/XgfkhUJ.jpg"); }
+      #team-members .member:hover #monica {
+        content: url("http://i.imgur.com/kOGgukP.jpg"); }
+      #team-members .member:hover #sherman {
+        content: url("http://i.imgur.com/vR5qUDN.jpg"); }
+      #team-members .member:hover #michael {
+        content: url("http://i.imgur.com/uPvGzLf.jpg"); }
+      #team-members .member:hover #charlyne {
+        content: url("http://i.imgur.com/iIIam00.jpg"); }
+      #team-members .member:hover #rosy {
+        content: url("http://i.imgur.com/IotuxCd.jpg"); }
+      #team-members .member:hover #arvinder {
+        content: url("http://i.imgur.com/LYeS2wQ.jpg"); }
+      #team-members .member:hover #sylvia {
+        content: url("http://i.imgur.com/J9mCR0K.jpg"); }
+      #team-members .member:hover #landon {
+        content: url("http://i.imgur.com/3Q6255r.jpg"); }
+      #team-members .member:hover #murat {
+        content: url("http://i.imgur.com/OrjxtuI.jpg"); }
+    #team-members .member div.name {
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
