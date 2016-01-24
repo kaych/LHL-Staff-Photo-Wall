@@ -1,65 +1,112 @@
+$primaryColor: #FF0000;
+$headerFont: 'Andale Mono';
+$primaryFont: Helvetica;
+$primaryScale: scale(1.1);
+
 body {
-  font-family: Verdana;
-  font-size: 1.5em;
+  font-family: $primaryFont;
+  font-size: 1.5;
+
+  h1 {
+    color: $primaryColor;
+    text-align: center;
+    font-family: $headerFont;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $headerFont;
+  }
 }
 
 #team-members {
   clear: both;
-}
 
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px;
-}
-
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-}
-
-#team-members .member div.name {
-  text-align: center;  
-}
-
-$primaryColor: #FF0000;
-body {
-  h1 {
-  color: $primaryColor;
+  .row {
+    display: block;
+    padding: 10px 100px;
   }
+
+  .member {
+    float: left;
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    padding: 6px;
+    -webkit-transition: transform 0.7s ease;
+    -moz-transition: transform 0.7s ease;
+    -o-transition: transform 0.7s ease;
+    -ms-transition: transform 0.7s ease;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+
+      opacity: 0.95;
+    }
+
+    &:hover {
+      transform: $primaryScale;
+    
+      #david {
+        content: url("http://i.imgur.com/3USVsbU.png");
+      }
+
+      #don {
+        content: url("http://i.imgur.com/NT5PRIh.jpg");
+      }
+
+      #jeremy {
+        content: url("http://i.imgur.com/GOFuRLx.jpg");
+      }
+
+      #khurram {
+        content: url("http://i.imgur.com/XgfkhUJ.jpg");
+      }
+
+      #monica {
+        content: url("http://i.imgur.com/kOGgukP.jpg");
+      }
+
+      #sherman {
+        content: url("http://i.imgur.com/vR5qUDN.jpg");
+      }
+
+      #michael {
+        content: url("http://i.imgur.com/uPvGzLf.jpg");
+      }
+
+      #charlyne {
+        content: url("http://i.imgur.com/iIIam00.jpg");
+      }
+
+      #rosy {
+        content: url("http://i.imgur.com/IotuxCd.jpg");
+      }
+
+      #arvinder {
+        content: url("http://i.imgur.com/LYeS2wQ.jpg");
+      }
+
+      #sylvia {
+        content: url("http://i.imgur.com/J9mCR0K.jpg");
+      }
+
+      #landon {
+        content: url("http://i.imgur.com/3Q6255r.jpg");
+      }
+
+      #murat {
+        content: url("http://i.imgur.com/OrjxtuI.jpg");
+      }
+
+    }
+
+    div.name {
+      text-align: center;
+    }
+
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
