@@ -2,13 +2,19 @@ $primaryColor: #005682;
 $headerFont: 'Andale Mono';
 $primaryFont: Helvetica;
 $primaryScale: scale(1.1);
-$primaryTransform: transform 0.7s ease;
 
 @mixin transition($primaryTransform) {
   -webkit-transition: $primaryTransform;
   -moz-transition: $primaryTransform;
   -o-transition: $primaryTransform;
   -ms-transition: $primaryTransform;
+}
+
+@mixin box-sizing($borderSizing) {
+  -webkit-box-sizing: $borderSizing;
+  -moz-box-sizing: $borderSizing;
+  -o-box-sizing: $borderSizing;
+  -ms-box-sizing: $borderSizing;
 }
 
 body {
@@ -18,12 +24,23 @@ body {
   h1 {
     color: $primaryColor;
     text-align: center;
+    position: relative;
+    top: 60px;
     font-family: $headerFont;
   }
 
   h2 {
     text-align: center;
     font-family: $headerFont;
+  }
+
+  .header { 
+    @include box-sizing(border-box);
+    background-color: #DDECEF;
+    margin: auto;
+    height: 160px;
+    width: 90%;
+    opacity: 0.8;
   }
 }
 
@@ -33,6 +50,7 @@ body {
   .row {
     display: block;
     padding: 10px 100px;
+    /*@include box-sizing(border-box);*/
   }
 
   .member {
@@ -40,7 +58,7 @@ body {
     /*border: 1px solid gray;*/
     margin: 10px;
     padding: 6px;
-    @include transition($primaryTransform);
+    @include transition(transform 0.7s ease);
 
     img {
       width: 200px;
