@@ -4,6 +4,13 @@ $primaryFont: Helvetica;
 $primaryScale: scale(1.1);
 $primaryTransform: transform 0.7s ease;
 
+@mixin transition($primaryTransform) {
+  -webkit-transition: $primaryTransform;
+  -moz-transition: $primaryTransform;
+  -o-transition: $primaryTransform;
+  -ms-transition: $primaryTransform;
+}
+
 body {
   font-family: $primaryFont;
   font-size: 1.5;
@@ -33,10 +40,7 @@ body {
     /*border: 1px solid gray;*/
     margin: 10px;
     padding: 6px;
-    -webkit-transition: $primaryTransform;
-    -moz-transition: $primaryTransform;
-    -o-transition: $primaryTransform;
-    -ms-transition: $primaryTransform;
+    @include transition($primaryTransform);
 
     img {
       width: 200px;
