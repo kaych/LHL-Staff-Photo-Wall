@@ -1,7 +1,8 @@
-$primaryColor: #FF0000;
+$primaryColor: #005682;
 $headerFont: 'Andale Mono';
 $primaryFont: Helvetica;
 $primaryScale: scale(1.1);
+$primaryTransform: transform 0.7s ease;
 
 body {
   font-family: $primaryFont;
@@ -32,17 +33,17 @@ body {
     /*border: 1px solid gray;*/
     margin: 10px;
     padding: 6px;
-    -webkit-transition: transform 0.7s ease;
-    -moz-transition: transform 0.7s ease;
-    -o-transition: transform 0.7s ease;
-    -ms-transition: transform 0.7s ease;
+    -webkit-transition: $primaryTransform;
+    -moz-transition: $primaryTransform;
+    -o-transition: $primaryTransform;
+    -ms-transition: $primaryTransform;
 
     img {
       width: 200px;
       height: 200px;
       border-radius: 100px;
-
       opacity: 0.95;
+      box-shadow: 0px 3px 6px #777;
     }
 
     &:hover {
